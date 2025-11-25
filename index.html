@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Empleados</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #content {
+            display: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="splash" src="splash.jpeg" alt="Splash Image">
+
+    <div id="content">
+        <br>
+        <br>
+        <br>
+        <section id="crear-empleado">
+            <h2>Empleado</h2>
+            <form id="employee-form">
+               <label for="dia">Dia:</label>
+<input type="text" id="dia" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="venta">Venta:</label>
+                <input type="number" id="venta" required>
+                <button type="button" onclick="crearEmpleado()">Agregar</button>
+                <br>
+                <button type="button" onclick="irADatos()">Ver Datos</button>
+            </form>
+        </section>
+    </div>
+
+    <script>
+        // Esperar 2 segundos antes de mostrar el contenido
+        setTimeout(function () {
+            document.getElementById("splash").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }, 3500);
+
+        function crearEmpleado() {
+            // Lógica para crear empleado
+        }
+
+        function irADatos() {
+            // Lógica para redirigir a la página de datos
+        }
+    </script>
+    <script src="app.js">app.js</script>
+</body>
+</html>

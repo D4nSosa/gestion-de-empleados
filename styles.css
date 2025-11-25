@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  font-size: 24px;
+  background-color: azure;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+  font-size: 30px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  margin: auto;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px; /* Ajusté el ancho máximo del formulario para una mejor visualización */
+  margin: auto;
+  font-size: 24px;
+}
+
+#employee-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#employee-table th, #employee-table td {
+  border: 3px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+#employee-table th {
+  background-color: #f2f2f2;
+}
+
+#employee-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+label {
+  text-align: center;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 5px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
